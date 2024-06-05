@@ -84,6 +84,6 @@ jobs:
       run: poetry run flake8 ./poetry_example
 
     - name: Verify static typing using mypy
-      run: poetry run mypy ./poetry_example/poetry_example --strict
+      run: poetry run mypy ./poetry_example --strict
 
       
