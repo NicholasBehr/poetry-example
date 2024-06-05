@@ -43,7 +43,8 @@ jobs:
     # The key configuration value here is `virtualenvs-in-project: true`: this creates the
     # venv as a `.venv` in your testing directory, which allows the next step to easily
     # cache it.
-    - uses: snok/install-poetry@v1.8.3
+    - name: Install and configure Poetry
+      uses: snok/install-poetry@v1
       with:
         version: 1.8.3
         virtualenvs-create: true
