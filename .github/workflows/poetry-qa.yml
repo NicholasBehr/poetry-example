@@ -80,6 +80,9 @@ jobs:
     - name: Format with black
       run: poetry run black ./poetry_example
 
+    - name: Sort imports using isort
+      run: poetry run isort ./poetry_example --profile black
+
     - name: Lint with flake8
       run: poetry run flake8 ./poetry_example
 
