@@ -1,4 +1,4 @@
-from src.user import User
+from poetry_example.user import User
 
 
 def test_user():

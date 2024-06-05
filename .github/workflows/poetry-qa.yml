@@ -78,12 +78,12 @@ jobs:
    ################################################################
 
     - name: Format with black
-      run: poetry run black ./src
+      run: poetry run black ./poetry_example
 
     - name: Lint with flake8
-      run: poetry run flake8 ./src
+      run: poetry run flake8 ./poetry_example
 
     - name: Verify static typing using mypy
-      run: poetry run mypy ./src/poetry_example --strict
+      run: poetry run mypy ./poetry_example/poetry_example --strict
 
       
