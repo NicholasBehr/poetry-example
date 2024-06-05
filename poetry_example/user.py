@@ -14,7 +14,7 @@ class User(object):
 
     def get_introduction(self) -> str:
         """
-        Return a user's self-introduction. -------------------------------------
+        Return a user's self-introduction.
 
         Returns:
             str
